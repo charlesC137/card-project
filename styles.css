@@ -1,0 +1,178 @@
+body{
+  font-family: 'Space Grotesk', sans-serif;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+main{
+  width: 96vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 27% 55%;
+  column-gap: 22%;
+}
+
+input{
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid rgb(207, 183, 183);
+  padding: 10px 5px;
+  width: 96%
+}
+
+button{
+  width: 100%;
+  color: white;
+  background-color: hwb(278 4% 82%);
+  margin-top: 15px;
+  height: 8%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#input-section{
+  padding-top: 20%;
+  max-width: 400px;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+#post-add{
+  margin-top: 19%;
+  height: 500px;
+  text-align: center;
+}
+
+#post-add .add-notification{
+  font-size: 12px;
+  color: hsl(270, 3%, 70%);
+  font-weight: 400;
+}
+
+#input-section p{
+  font-weight: 600;
+  font-size: 12px;
+  color: hsl(278, 68%, 11%);
+}
+
+#cool-background{
+  max-width: 400px;
+  position: relative;
+}
+
+#exp-month,
+#exp-year{
+  width: 41%;
+}
+
+#input-grid{
+  display: grid;
+  grid-template-columns: 50% 43%;
+  column-gap: 5%;
+}
+
+.card-front,
+.card-back{
+  position: absolute;
+  width: 230px;
+}
+
+.card-back{
+  top: 35%;
+  left: 25%;
+}
+
+.card-front{
+  top: 15%;
+  left: 10%;
+}
+
+.container{
+  position: relative;
+}
+
+#white-circle{
+  position: absolute;
+  color: white;
+  background-color: white;
+  height: 34px;
+  width: 34px;
+  border-radius: 17px;
+  top: -3px;
+  left: 15px;
+  z-index: 110;
+}
+
+#transparent-circle{
+  position: absolute;
+  color: transparent;
+  border: 1px solid white;
+  background-color: transparent;
+  height: 16px;
+  width: 16px;
+  border-radius: 8px;
+  z-index: 110;
+  top: 4px;
+  left: 60px;
+}
+
+.card-number{
+  position: absolute;
+  color: white;
+  z-index: 110;
+  top: 50px;
+  left: 15px;
+  font-size: 19px;
+}
+
+.name{
+  position: absolute;
+  color: white;
+  z-index: 110;
+  top: 92px;
+  left: 15px;
+  font-size: 10px;
+}
+
+.exp-date{
+  position: absolute;
+  color: white;
+  z-index: 110;
+  top: 92px;
+  left: 190px;
+  font-size: 10px;
+}
+
+.cvc{
+  position: absolute;
+  color: white;
+  z-index: 110;
+  top: 37px;
+  left:75%;
+}
+
+.front-image,
+.back-image{
+  width: 100%;
+  z-index: 100;
+  position: absolute;
+}
+
+#input-section .error{
+  color: red;
+  font-size: 11px;
+  text-align: center;
+  animation: textZoom 3s linear 1s infinite alternate;
+  margin-top: 10px;
+}
+
+@keyframes textZoom{
+  from{
+    font-size : 11px;
+  }
+
+  to{
+    font-size: 12px;
+  }
+}
